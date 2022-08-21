@@ -20,7 +20,7 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.Handle("/", h)
-	mux.Handle("/products", p)
+	mux.Handle("/products/", p)
 
 	server := http.Server{
 		Addr:         ":9090",           // configure the bind address
